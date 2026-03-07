@@ -1,3 +1,79 @@
-.intro {
-    display: flex;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: grey;
 }
+
+body {
+  width: 512px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.intro {
+  display: flex;
+  /* attivo flex (i figli di .intro li gestisci con flexbox) */
+  flex-direction: column;
+  /* elementi uno sotto l'altro */
+  gap: 12px;
+  /* spazio tra titolo e barra aggiungi amici */
+}
+
+.strumenti>i {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  /* forma circolare */
+  background-color: #2b2d31;
+  display: flex;
+  /* per centrare l'icona dentro */
+  align-items: center;
+  justify-content: center;
+  color: #b5bac1;
+  font-size: 14px;
+}
+
+.aggiungi-amici {
+  flex: 1;
+  /* si allarga per riempire lo spazio rimasto */
+  display: flex;
+  /* icona + testo in fila */
+  align-items: center;
+  justify-content: center; /*centrato simbolo e scritta aggiungi amici*/
+  gap: 8px;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  /* pillola molto arrotondata */
+  background-color: #2b2d31;
+}
+
+span {
+  justify-content: flex-start;
+}
+
+.strumenti {
+  display: flex;
+  /* diventa flex container */
+  align-items: center;
+  gap: 8px;
+} /*
+.strumenti è un contenitore flex.
+
+I suoi figli (la lente <i> e il div .aggiungi-amici) vengono messi in fila orizzontale,
+
+centrati in verticale, con 8px di spazio tra loro.
+
+Quindi .strumenti controlla come stanno tra loro lente e pillola.*/

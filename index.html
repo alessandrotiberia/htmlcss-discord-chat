@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>htmlcss-discord-chat</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <!-- Bootstrap Icone -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
 </head>
 
 <body>
-    <header>
+    <header> <!--creato classe per racchiudere header.
+        span (strumenti) dove ho messo titolo lente di ricerca e barra aggiungi amici.
+        altro div per racchiudere barra aggiungi amici.  -->
         <div class="intro">
             <h1>Messaggi</h1>
-            <span>barra di ricerca</span>
-            <span>Aggiungi amici</span>
+            <span class="strumenti">
+                <i class="bi bi-search"></i> <!-- FIGLIO diretto di .strumenti -->
+                <div class="aggiungi-amici">
+                    <i class="bi bi-person-fill-add"></i> <!--FIGLIO di .aggiungi-amici-->
+                    <span class="add-friends">Aggiungi amici</span>
+                </div>
+            </span>
         </div>
     </header>
     <main>
