@@ -57,7 +57,7 @@ h1 {
   padding: 0 12px;
   border-radius: 999px;
   /* pillola molto arrotondata */
-  background-color: #2b2d31;
+  background-color: red;
 }
 
 span {
@@ -77,3 +77,113 @@ I suoi figli (la lente <i> e il div .aggiungi-amici) vengono messi in fila orizz
 centrati in verticale, con 8px di spazio tra loro.
 
 Quindi .strumenti controlla come stanno tra loro lente e pillola.*/
+
+/*per rendere aggiungi amici scritto con colore bianco*/
+.aggiungi-amici i {
+ color: white;
+}
+.add-friends {
+  color: white;
+}
+.app {
+  display: flex;      /* sidebar + content affiancati */
+  height: 100vh;
+}
+
+.sidebar {
+  width: 80px;        /* colonna loghi */
+  background-color: #1e1f22;
+}
+
+.content {
+  flex: 1;            /* prende lo spazio restante */
+  background-color: #313338;
+}
+/*ora metto in ordine le foto */
+.sidebar {
+  width: 80px;
+  background-color: #1e1f22;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.logo-list {
+  display: flex;
+  flex-direction: column;   /* uno sotto l'altro */
+  gap: 12px;                /* spazio tra i loghi */
+  align-items: center;
+}
+
+.logo-list img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;       /* li rende cerchi */
+  object-fit: cover;        /* ritaglia l'immagine nel cerchio */
+}
+/* area contenuto a destra */
+.content {
+  flex: 1;
+  background-color: #313338;
+  display: flex;
+  flex-direction: column;
+}
+
+/* un po' di spazio intorno a header e lista */
+.content header {
+  padding: 16px 24px;
+}
+
+.chat-list {
+  padding: 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* singola chat */
+.chat-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background-color: #2b2d31;
+}
+
+/* foto profilo */
+.chat-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* testo a destra dell'immagine */
+.chat-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* riga con nome + tempo */
+.chat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-name {
+  color: #fff;
+  font-weight: 600;
+}
+
+.chat-time {
+  color: #b5bac1;
+  font-size: 12px;
+}
+
+.chat-preview {
+  color: #b5bac1;
+  font-size: 14px;
+}

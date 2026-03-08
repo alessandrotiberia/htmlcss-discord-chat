@@ -11,7 +11,23 @@
 </head>
 </head>
 
-<body>
+<body> <!--
+    .app divide la pagina in due colonne,
+
+.sidebar a sinistra è stretta per i loghi,
+
+.content a destra contiene il tuo header e tutto il resto.-->
+    <div class="app">
+    <!-- colonna sinistra: loghi -->
+    <aside class="sidebar">
+        <img src="./img/logo.webp" alt="">
+     <img src="./img/server arte.png" alt="">
+     <img src="./img/server_boolean.png" alt="">
+     <img src="./img/server_italia.png" alt="">
+     <img src="./img/server_javascript.png" alt="">
+     <img src="./img/server_nintendo.png" alt="">
+    <img src="./img/server_pokemon.png" alt="">
+    </aside>
     <header> <!--creato classe per racchiudere header.
         span (strumenti) dove ho messo titolo lente di ricerca e barra aggiungi amici.
         altro div per racchiudere barra aggiungi amici.  -->
@@ -27,9 +43,15 @@
         </div>
     </header>
     <main>
-        <div>
-
-        </div>
+        <section class="chat-list">
+  <div class="chat-item">
+    <img src="./img/profile1.webp" alt="Giuseppe Rossi">
+    <div class="chat-text">
+      <div class="chat-row">
+        <span class="chat-name">Giuseppe Rossi</span>
+        <span class="chat-time">2min</span>
+      </div>
+      <span class="chat-preview">ciao! tutto bene?</span>
         <footer>
             <div>
                 <span>pagina principale</span>
